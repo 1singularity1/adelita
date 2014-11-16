@@ -15,6 +15,7 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png" />
 <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
 
 <!--[if lt IE 9]>
@@ -31,8 +32,9 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div id="logo">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/logo_adelitas_tampon_mexican_pink.png">
-			</a>
+				<!-- img src="<?php echo get_template_directory_uri(); ?>/images/logo_adelitas_tampon_mexican_pink_incline_avec_fond.png"-->
+				<img src="<?php echo get_template_directory_uri(); ?>/images/logo_adelitas_tampon_mexican_pink_incline_fond_blanc.png">
+				</a>
 		</div>
 		<hgroup>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>

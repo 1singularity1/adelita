@@ -119,7 +119,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: 400;
 }
 hr {
-	background-color: #ccc;
+	background-color: #eee;
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
@@ -385,18 +385,29 @@ a:active {
 /* 	height:100px; */
 }
 
-#masthead-wrap {
-	background-color: white;
-/* 	background-color: red; */
-	background-image: url("images/adelita_blog_header_03.png");
+#separator {
+	background-image: url("images/border_mexican_pink.png");
 	background-repeat: repeat-x;
-	-webkit-box-shadow: 0 2px 3px rgba(100, 100, 100, 0.25);
-	box-shadow: 0 2px 3px rgba(100, 100, 100, 0.25);
+	background-position:bottom;
+	width:50%;
+	height:10px;
+	border:0px solid black;
+	margin:auto;
+}
+
+#masthead-wrap {
+	background-color: rgba(255,255,255,0.9);
+/* 	background-color: red; */
+	background-image: url("images/border_mexican_pink.png");
+	background-repeat: repeat-x;
+	background-position:bottom;
+	/*-webkit-box-shadow: 0 2px 3px rgba(100, 100, 100, 0.25);*/
+	/*box-shadow: 0 2px 3px rgba(100, 100, 100, 0.25);*/
 	position: fixed;
 		top: 0;
 		z-index: 1000;
 	width: 100%;
-/* 	border:2px solid red; */
+/*  	border-bottom:2px solid #E4007C;  */
 }
 .logged-in #masthead-wrap {
 	top: 32px;
@@ -410,7 +421,7 @@ a:active {
 	width: auto;
 	min-height: 50px;
 /* 	border:1px solid black; */
-	height:130px;
+	height:80px;
 }
 #masthead hgroup {
 	float: left;
@@ -438,7 +449,7 @@ a:active {
 }
 .site-description {
 	font-family: 'Gloria Hallelujah', cursive;
-	margin-top:25px;
+	margin-top:5px;
 	color: #E4007C;/*#818181;*/
 	font-size: 2.3em;
 /* 	border:1px solid black; */
@@ -448,10 +459,13 @@ a:active {
 #main {
 	font-size: .8em;
 	line-height: 24px;
-	margin: 25px auto;
+	margin: 0px auto;
+	padding-top:25px;
 	width: 960px;
 	background-color:white;
-	box-shadow: 1px 1px 12px #555;
+	-webkit-box-shadow: 0 0 0 #eee,1px 1px 40px #eee,1px 1px 40px #eee,1px 1px 40px #eee;
+	-moz-box-shadow: 0 0 0 #eee,1px 1px 40px #eee,1px 1px 40px #eee,1px 1px 40px #eee;
+	box-shadow: 0 0 0 #eee,1px 1px 40px #eee,1px 1px 40px #eee,1px 1px 40px #eee;
 }
 #primary {
 	float: left;
@@ -490,10 +504,12 @@ a:active {
 ----------------------------------------------- */
 
 .main-navigation {
+	position:relative;
 	display: block;
 	width: 99%;
-	border-bottom:1px solid grey;
+	border-bottom:1px solid #eee;
 	margin:5px 5px 5px 5px;
+	padding-top:45px;
 }
 .main-navigation ul {
 	list-style: none;
@@ -507,10 +523,10 @@ a:active {
 }
 .main-navigation a {
 	font-family: 'Gloria Hallelujah', cursive;
-	color: black;
+	color: grey;
 	display: block;
 	font-size: 1.5em;
-	padding: 3px 20px;
+	padding: 0px 20px 0 20px;
 	text-decoration: none;
 }
 .main-navigation ul ul {
@@ -556,6 +572,17 @@ a:active {
 .main-small-navigation .menu {
 	display: none;
 }
+
+/* products */
+.dresses img {
+	margin : 0 20px 10px 0;
+	box-shadow: 1px 1px 12px #555;
+	border:2px solid white;
+}
+
+/* .dresses a { */
+/* 	color: #E4007C; */
+/* } */
 
 
 /* =Featured Content
@@ -736,7 +763,8 @@ h5 {
 h1.entry-title,
 h2.entry-title {
 	font-family: 'Gloria Hallelujah', cursive;
-	color: #1e4a66;
+/* 	color: #1e4a66; */
+	color:#86B112;
 	font-size: 1.9em;
 	font-weight: 400;
 	line-height: 1.5em;
@@ -751,6 +779,13 @@ h2.entry-title {
 /* 	color: #1e4a66; */
 	
 }
+
+.dresses .entry-title a {
+	color: #86B112;
+/* 	color: #1e4a66; */
+	
+}
+
 .hentry:hover .entry-title a {
 /* 	color: black; */
 }
@@ -783,6 +818,18 @@ footer.entry-meta {
 	margin: 0;
 	padding: 1.5em 25px 0 25px;
 }
+
+.entry-content a {
+	font-family: 'Gloria Hallelujah', cursive;
+	color:black;
+	font-size: 1.5em;
+	font-weight: 400;
+}
+
+.entry-content a:hover {
+	color:#86B112;
+}
+
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
@@ -924,12 +971,19 @@ object {
 	width: 50%;
 }
 
-
 /* =Comments
 ----------------------------------------------- */
 
+#reply-title, #comment-reply-tile {
+	color:black;
+}
+
+#comment-form submit {
+	
+}
+
 #comments {
-	background-color: #f2f2f2;
+	background-color: white;
 	padding: 25px;
 }
 .bypostauthor > article {
@@ -1102,6 +1156,7 @@ object {
 	padding: 5% 2%;
 	width: 57%;
 }
+
 .widget #searchsubmit {
 	color:white;
 	background: #E4007C;
@@ -1114,11 +1169,21 @@ object {
 /* 	transition: all 0.2s ease; */
 	width: 35%;
 }
+#submit {
+	color:white;
+	background: #E4007C;
+	border: none 0;
+	text-align: center;
+/* 	-webkit-transition: all 0.2s ease; */
+/* 	-moz-transition: all 0.2s ease; */
+/* 	-o-transition: all 0.2s ease; */
+/* 	transition: all 0.2s ease; */
+}
 .widget:hover #searchsubmit {
 	background: black;
 	color: #fff;
 }
-.widget:hover #searchsubmit:hover {
+.widget:hover #searchsubmit:hover, #submit:hover{
 	background: black;
 	color: white;
 }
